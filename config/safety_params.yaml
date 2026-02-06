@@ -1,0 +1,16 @@
+# vibralyzer-core/config/safety_params.yaml
+
+persistence:
+  normal_to_watch: 3
+  watch_to_warning: 6
+  warning_to_alarm: 10
+  recovery_to_normal: 5
+
+baseline:
+  min_samples: 100
+  learning_rate: 0.05
+  freeze_on_anomaly: true
+
+diagnostics:
+  cooldown_seconds: 3600
+  min_confidence: 0.7

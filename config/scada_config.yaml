@@ -1,0 +1,11 @@
+# config/scada_config.yaml
+
+mqtt:
+  broker: "localhost"
+  port: 1883
+  client_id: "Vibralyzer_Engine_01"
+
+spb:
+  group_id: "Factory_A"
+  node_id: "Edge_Vib_01"
+  device_id: "Pump_Motor_01"

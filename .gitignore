@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# Config (Opsional: jika Anda ingin merahasiakan kredensial MQTT)
+# config/scada_config.yaml
+
+# OS
+.DS_Store
+Thumbs.db

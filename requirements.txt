@@ -1,0 +1,4 @@
+# Dasar Komunikasi
+paho-mqtt
+pyyaml
+numpy
