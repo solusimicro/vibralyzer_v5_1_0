@@ -1,4 +1,5 @@
 import paho.mqtt.client as mqtt
+from paho.mqtt.enums import CallbackAPIVersion # Ini cara import yang benar di v2.0
 import json
 import time
 import yaml
@@ -14,7 +15,7 @@ class MQTTManager:
 
         # Pastikan menggunakan CallbackAPIVersion.VERSION2 karena kita pakai paho-mqtt 2.x
         self.client = mqtt.Client(
-            mqtt.CallbackAPIVersion.VERSION2, 
+            CallbackAPIVersion.VERSION2, 
             client_id=self.cfg['mqtt']['client_id']
         )
         

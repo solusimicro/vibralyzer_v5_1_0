@@ -1,0 +1,9 @@
+Perintah mosquitto_sub yang Spesifik
+mosquitto_sub -t "spBv1.0/Factory_A/DDATA/Edge_Vib_01/Pump_Motor_01" -v
+Melihat semua data Sparkplug B:
+mosquitto_sub -t "spBv1.0/#" -v
+Melihat semua data (Raw + Sparkplug B):
+mosquitto_sub -t "#" -v
+
+Cek Raw Data
+mosquitto_sub -t "vibration/raw/#" -v

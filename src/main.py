@@ -1,3 +1,4 @@
+from logging import config
 import yaml
 import time
 from engine.ring_buffer import RingBuffer
@@ -18,7 +19,7 @@ with open('config/safety_params.yaml', 'r') as f:
 
 fsm = EarlyFaultFSM(safety_cfg)
 baseline = BaselineManager(safety_cfg)
-l2_diag = L2Diagnostic()
+l2_diag = L2Diagnostic(config=safety_cfg)
 mapper = ScadaMapper()
 tesla_scada = MQTTManager(config_path='config/scada_config.yaml')
 
